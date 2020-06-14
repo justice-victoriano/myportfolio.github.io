@@ -1,0 +1,217 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    width: 5%;
+    margin-left: 2%;
+    margin-top: 1.6%;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    margin-top:0%;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-right: 3%;
+    text-align: right;
+    margin: 0;
+    transition: .5s;
+
+}
+
+nav.black ul {
+    background: white;
+    box-shadow: 0px 10px 12px -2px rgba(0, 0, 0, .1);
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 0%;
+    padding-left: 4%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3E424B;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.menu-icon {
+    width: 100%;
+    background: white;
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+    color: #7bc6d1;
+    display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content .grid-container{
+    padding-top:9%;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 36.5% 1fr 1fr;
+  grid-template-rows: 11% 1fr 1fr 1fr 1%;
+  grid-gap: 80px 50px;
+  grid-template-areas: "title title title" "recruitment recruitment-work recruitment-work" "frontliners frontliners-work frontliners-work" "verasoni verasoni-work verasoni-work";
+}
+
+.grid-container .title { 
+    grid-area: title;
+    padding-bottom: 0%;
+    margin-bottom:0%;
+}
+
+.button  {
+    background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+
+.title h1{
+    font-size: 60px;
+    color: #8dc7d2;
+    text-align: center;
+    background-color: #ffee3c;
+    padding: 2% 0% 2% 0%;
+    margin:0% 0% 0% 0%;
+}
+
+.recruitment { 
+    grid-area: recruitment;
+    margin-left:40%;
+    
+    
+}
+.recruitment h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+    
+}
+.recruitment p{
+    font-weight: 300;
+}
+
+.recruitment-work { 
+    grid-area: recruitment-work; 
+   margin-right:20%;
+
+}
+
+.recruitment-work img{
+    width:100%;
+}
+
+.frontliners { 
+    grid-area: frontliners; 
+    margin-left:40%;
+}
+
+.frontliners h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+}
+.frontliners p{
+    font-weight: 300;
+}
+
+
+.frontliners-work { 
+    grid-area: frontliners-work; 
+    margin-right:20%;
+}
+
+.frontliners-work img{
+    width:100%;
+}
+
+.verasoni { 
+    grid-area: verasoni; 
+    margin-left:40%;
+}
+
+.verasoni  h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+}
+.verasoni p{
+    font-weight: 300;
+}
+.verasoni-work { 
+    grid-area: verasoni-work;
+    margin-right:20%;
+    margin-bottom:15%;
+}
+
+.verasoni-work img{
+    width:100%;
+}
+
+
+h2{
+    color: #3E424B;
+}
+
+
+
+.footer {
+    padding-top: 3%;
+    padding-bottom: 5.7%;
+    padding-right:3%;
+    background-color: #FFEE3C;
+   
+}
+
+.footer img{
+    float:right;
+    width: 3%;
+    padding-bottom:0%;
+    margin-left:1%;
+}

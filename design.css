@@ -1,0 +1,513 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    width: 5%;
+    margin-left: 2%;
+    margin-top: 1.6%;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    margin-top:0%;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-right: 3%;
+    text-align: right;
+    margin: 0;
+    transition: .5s;
+
+}
+
+nav.black ul {
+    background: white;
+    box-shadow: 0px 10px 12px -2px rgba(0, 0, 0, .1);
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 0%;
+    padding-left: 4%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3E424B;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.menu-icon {
+    width: 100%;
+    background: white;
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+    color: #7bc6d1;
+    display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content .grid-container{
+    padding-top:9%;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7% 16% 20% 1fr 1fr ;
+  grid-gap: 60px 50px;
+  grid-template-areas: "title title title" "venus venus-work venus-work" "garamond garamond-work garamond-work" "lucky-charms lucky-charms-work lucky-charms-work" "chip chip-work chip-work" ;
+}
+
+.grid-container .title { 
+    grid-area: title;
+    padding-bottom: 0%;
+    margin-bottom:0%;
+}
+
+.button  {
+    background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+
+.title h1{
+    font-size: 60px;
+    color: #8dc7d2;
+    text-align: center;
+    background-color: #ffee3c;
+    padding: 2% 0% 2% 0%;
+    margin:0%;
+}
+
+.venus { 
+    grid-area: venus;
+    margin-left:40%;
+    
+    
+}
+.venus h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+    
+}
+.venus p{
+    font-weight: 300;
+}
+
+.venus-work { grid-area: venus-work; 
+   margin-right:20%;
+
+}
+
+.venus-work img{
+    width:100%;
+}
+
+.garamond { 
+    grid-area: garamond; 
+    margin-left:40%;
+}
+
+.garamond h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+}
+.garamond p{
+    font-weight: 300;
+}
+
+
+.garamond-work { 
+    grid-area: garamond-work; 
+    margin-right:20%;
+}
+
+.garamond-work img{
+    width:100%;
+}
+
+.lucky-charms { 
+    grid-area: lucky-charms; 
+    margin-left:40%;
+}
+
+.lucky-charms h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+}
+.lucky-charms p{
+    font-weight: 300;
+}
+.lucky-charms-work { 
+    grid-area: lucky-charms-work;
+    margin-right:20%;
+    margin-bottom:8%;
+}
+
+.lucky-charms-work img{
+    width:100%;
+}
+.chip { 
+    grid-area: chip; 
+    margin-left:40%;
+}
+
+.chip h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top:0%;
+}
+.chip p{
+    font-weight: 300;
+}
+.chip-work { 
+    grid-area: chip-work; 
+    margin-right:20%;
+}
+
+.chip-work img{
+    width:100%;
+}
+
+h2{
+    color: #3E424B;
+}
+
+.footer {
+    padding-top: 3%;
+    padding-bottom: 5.7%;
+    padding-right:3%;
+    background-color: #FFEE3C;
+   
+}
+
+.footer img{
+    float:right;
+    width: 3%;
+    padding-bottom:0%;
+    margin-left:1%;
+}
+
+/* For presentation only, no need to copy the code below 
+.grid-container * { 
+ border: 1px solid red; 
+}
+
+
+
+/* For presentation only, no need to copy the code below 
+.grid-container * { 
+ border: 1px solid red;
+ position: relative;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIDEO PAGE
+
+
+
+
+
+
+.content2 {
+    margin-top: -30%;
+}
+
+.content2 h1 {
+
+    font-size: 60px;
+    color: #8dc7d2;
+    text-align: center;
+    margin-top: -46%;
+    margin-bottom: 5%;
+    background-color: #ffee3c;
+    padding: 2% 0% 2% 0%;
+}
+
+
+.recruitment-video {
+    width: 55%;
+    margin-top: 12%;
+    margin-left: 40%;
+    padding-bottom: 5%;
+   
+}
+
+.recruitment-video-description {
+    width: 20%;
+    margin-top: -32.3%;
+    margin-left: 15%;
+}
+
+.recruitment-video-description h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.recruitment-video-description p{
+    font-weight: 300;
+    font-size: 17px;
+    
+}
+
+.recruitment-video-description .button{
+    background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.frontliners-video{
+    margin-top: 22%;
+    margin-left: 40%;
+    padding-bottom: 0%;
+}
+
+.frontliners-description{
+    width: 20%;
+    margin-top: -27.3%;
+    margin-left: 15%;
+}
+
+.frontliners-description h2{
+     font-size: 25px;
+    font-weight: 600;
+}
+.frontliners-description p{
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.frontliners .button {
+     background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.verasoni-video {
+    margin-top: 25%;
+    margin-left: 40%;
+    padding-bottom: 0%;
+}
+
+.verasoni-description{
+    width: 20%;
+    margin-top: -27.2%;
+    margin-left: 15%;
+}
+
+.verasoni-description h2{
+     font-size: 25px;
+    font-weight: 600;
+}
+.verasoni-description p{
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.verasoni .button {
+    background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.animation2d {
+    width: 55%;
+    margin-top: 12%;
+    margin-left: 40%;
+    padding-bottom: 5%;
+   
+}
+
+.animation2d-description {
+    width: 20%;
+    margin-top: -32.3%;
+    margin-left: 15%;
+}
+
+.animation2d-description h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.animation2d-description p{
+    font-weight: 300;
+    font-size: 17px;
+    
+}
+
+.animation2d-description .button{
+    background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.animation3d-video{
+    margin-top: 25%;
+    margin-left: 40%;
+    padding-bottom: 0%;
+}
+
+.animation3d-description{
+    width: 20%;
+    margin-top: -27.3%;
+    margin-left: 15%;
+}
+
+.animation3d-description h2{
+     font-size: 25px;
+    font-weight: 600;
+}
+.animation3d-description p{
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.animation3d .button {
+     background-color: #ffee3c;
+    color: #3E424B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+*/
+    
+
+
+    /*Mobile*/
+    @media(max-width: 580px) {
+
+
+
+        .logo {
+            position: fixed;
+            top: 1%;
+            width: 15%;
+
+        }
+
+        nav ul {
+            max-height: 0px;
+            background: white;
+        }
+
+        nav.black ul {
+            background: white;
+            667A95z
+        }
+
+        .showing {
+            max-height: 20em;
+        }
+
+        nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px 0;
+            text-align: center;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+    }
