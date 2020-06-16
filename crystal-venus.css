@@ -19,8 +19,8 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    margin-top:0%;
-    
+    margin-top: 0%;
+
 
 }
 
@@ -71,145 +71,877 @@ nav ul li a {
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.content .grid-container{
-    padding-top:9%;
-    
-}.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 250px 770px 200px 1fr;
-  grid-gap: 1px 1px;
-  grid-template-areas: "work work side-info" "picture picture picture" "subtitle description description" "gallery gallery gallery" ". . ." ". . .";
+.content .grid-container {
+    padding-top: 9%;
+
 }
 
-.work { 
-    grid-area: work; 
-    margin-left:20%;
-    margin-top:2%;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 20% 5% 1fr 30%;
+    grid-gap: 50px 1px;
+    grid-template-areas: "work work side-info" "picture picture picture" "subtitle description description" "gallery gallery gallery" "venus-video venus-video venus-video";
 }
 
-.work h2{
+.work {
+    grid-area: work;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.work h2 {
     font-weight: 600;
     font-size: 25px;
-    margin-top:2%
+    margin-top: 2%
 }
-.work p{
-    font-weight:300;
-    width:100%;
+
+.work p {
+    font-weight: 300;
+    width: 100%;
 }
-.side-info { 
+
+.side-info {
     grid-area: side-info;
-    margin-top:4%;
-    margin-left:20%;
+    margin-top: 4%;
+    margin-left: 20%;
 }
-.side-info h3{
+
+.side-info h3 {
     font-weight: 600;
-    margin-bottom:0%;
-    margin-top:4%;
-    
+    margin-bottom: 0%;
+    margin-top: 4%;
+
 }
-.side-info p{
-    font-weight:300;
-    padding:0%;
-    margin:0;
+
+.side-info p {
+    font-weight: 300;
+    padding: 0%;
+    margin: 0;
     font-size: 16px;
 }
 
-.picture { 
-    grid-area: picture; 
-    
+.picture {
+    grid-area: picture;
+
 }
 
-.picture img{
-    width:35%;
+.picture img {
+    width: 35%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:0%;
+    margin-bottom: 0%;
 }
 
 
-.subtitle { 
-    grid-area: subtitle; 
-    
+.subtitle {
+    grid-area: subtitle;
     background-color: #ffee3c;
     outline: 1px solid #ffee3c;
-    padding-top:10%;
-    
-    
-   
+    padding-top: 8%;
+    padding-bottom: 10%;
 }
-.subtitle h2{
+
+.subtitle h2 {
     font-weight: 300;
     font-size: 20px;
-    margin-top:2%;
-    margin-left:40%;
-    
+    margin-top: 0%;
+    margin-left: 40%;
+
 }
-.description { 
-    grid-area: description; 
+
+
+.description {
+    grid-area: description;
     background-color: #ffee3c;
-    outline: 1px solid #ffee3c; 
-    padding-top:4%;
+    outline: 1px solid #ffee3c;
+
 }
 
-.description p{
-    font-weight:300;
+
+.description h2 {
+    display: none;
+    /*
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom:0%;
+    margin-bottom: 0%;
+    margin-top:5%;
+    */
+}
+
+.description p {
+    font-weight: 300;
     font-size: 16px;
-    width:80%;
-    
-}
-.gallery { 
-    grid-area: gallery; 
-    margin-top: 10%;
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
-.gallery img{
-    width:50%;
+.gallery {
+    grid-area: gallery;
+    margin-top: 7%;
+}
+
+.gallery img {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top:.2%;
-    margin-bottom:0%;
+    margin-top: .2%;
 }
 
-.gallery iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10%;
-    margin-bottom: 10%;
-    
+
+.venus-video {
+    grid-area: venus-video;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 0;
+    margin-right: 25%;
+    margin-left: 25%;
+
+
 }
 
-h2{
+.venus-video iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+
+h2 {
     color: #3E424B;
 }
 
-h3{
+h3 {
     color: #3E424B;
 }
+
 .footer {
     padding-top: 3%;
     padding-bottom: 5.7%;
-    padding-right:3%;
+    padding-right: 3%;
     background-color: #FFEE3C;
-   
+    margin-top: 25%;
+
 }
 
-.footer img{
-    float:right;
+.footer img {
+    float: right;
     width: 3%;
-    padding-bottom:0%;
-    margin-left:1%;
+    padding-bottom: 0%;
+    margin-left: 1%;
 }
 
 
 /* For presentation only, no need to copy the code below 
 .grid-container * { 
-border: 1px solid red;
+border: 1px solid red; *
+}
+*/
+
+@media screen and (min-width: 1920px) and (orientation:landscape) {
+
+    .grid-container {
+        grid-template-rows: 5% 26% 4% 1fr 30%;
+    }
+
+    .gallery img {
+        width: 40%;
+    }
+
+
+    .venus-video {
+        grid-area: venus-video;
+        overflow: hidden;
+        padding-bottom: 30%;
+        position: relative;
+        height: 0;
+        margin-right: 30%;
+        margin-left: 30%;
+
+
+    }
+
+    .venus-video iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+
+
+    }
+
+
 }
 
+@media screen and (min-width: 2560px) and (orientation:landscape) {
+    
+
+    nav ul li a {
+        font-size: 25px;
+    }
+    
+    .grid-container {
+        grid-template-rows: 6% 26% 5% 1fr 30%;
+    }
+
+
+    .work h2 {
+        font-size: 35px;
+    }
+
+    .work p {
+        font-size: 25px;
+    }
+
+    .side-info {
+        grid-area: side-info;
+        margin-top: 4%;
+        margin-left: 20%;
+    }
+
+    .side-info h3 {
+        font-size: 25px;
+
+    }
+
+    .side-info p {
+        font-size: 25px;
+    }
+
+
+
+    .subtitle h2 {
+        font-size: 27px;
+
+    }
+
+
+
+    .description p {
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) and (orientation:portrait) {
+
+    .logo {
+        width: 10%;
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+
+    nav ul {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    .content .grid-container {
+        padding-top: 17%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 5.6% auto auto;
+        grid-gap: 50px 1px;
+        grid-template-areas: "work work side-info" "picture picture picture" "subtitle description description" "gallery gallery gallery" "venus-video venus-video venus-video";
+    }
+
+    .work {
+        margin-left: 20%;
+    }
+
+    .work h2 {
+        font-size: 30px;
+    }
+    .work p {
+        font-size: 20px;
+    }
+    .side-info {
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .side-info h3 {
+        margin-top: 4%;
+        font-size: 20px;
+
+    }
+    .side-info p {
+        font-size: 20px;
+    }
+
+    .picture img {
+        width: 55%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+
+    .subtitle {
+        padding-top: 10%;
+    }
+
+    .subtitle h2 {
+        font-size: 25px;
+
+    }
+    .description {
+        padding-top: 1%;
+    }
+
+    .description p {
+        font-size: 20px;
+        width: 85%;
+
+    }
+    .gallery {
+        margin-top: 7%;
+    }
+
+    .gallery img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .2%;
+    }
+
+
+    .venus-video {
+        grid-area: venus-video;
+        overflow: hidden;
+        padding-bottom: 50%;
+        position: relative;
+        height: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 15%;
+    }
+
+
+    .venus-video iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    .footer {
+        margin-top: 7%;
+        padding-bottom: 9.5%;
+        padding-top: 2%;
+        padding-right: 2%;
+        background-color: #FFEE3C;
+    }
+
+    .footer img {
+        width: 8%;
+        padding-top: 0%;
+        margin-left: 2%;
+        float: right;
+    }
+
+
+
+    /* For presentation only, no need to copy the code below 
+.grid-container * { 
+ border: 1px solid red;
+}
+    */
+}
+
+
+@media screen and (max-width: 960px) and (orientation:portrait) {
+
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-gap: 50px 1px;
+        grid-template-areas: "work work side-info" "picture picture picture" "subtitle subtitle subtitle" "description description description" "gallery gallery gallery" "venus-video venus-video venus-video";
+    }
+
+    .work {
+        grid-area: work;
+        margin-left: 15%;
+    }
+
+
+    .picture {
+        grid-area: picture;
+
+    }
+
+    .picture img {
+        width: 60%;
+    }
+
+
+    .subtitle {
+        display: none;
+    }
+
+    .subtitle h2 {
+        display: none;
+
+    }
+
+
+    .description {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .description h2 {
+        display: block;
+        font-weight: 300;
+        font-size: 25px;
+        margin-left: 10%;
+
+    }
+
+    .description p {
+
+        font-size: 20px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*
+    .subtitle {
+        grid-area: subtitle;
+        padding-top: 0%;
+
+
+
+    }
+    .subtitle h2 {
+        font-size: 27px;
+        margin-top: 3%;
+        margin-left: 10%;
+
+    }
+    .description {
+        grid-area: description;
+        padding-top: 0%;
+        padding-bottom: 1%;
+        margin-top: -15%;
+    }
+
+    .description p {
+        margin-top: 0%;
+        font-size: 20px;
+        margin-left: 10%;
+
+    }
+    */
+}
+
+
+@media screen and (max-width: 540px) and (orientation:portrait) {
+    .logo {
+        width: 12%;
+        margin-top: -9.5%;
+        padding-left: 0%;
+
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: white;
+        margin-top: -1%;
+        padding-right: 0%;
+        padding-left: 0%;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+
+    nav.black ul {
+        background: white;
+    }
+
+    .showing {
+        max-height: 40em;
+
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+
+    .menu-icon {
+        padding-top: 5%;
+        display: block;
+        color: #a3dee8;
+        padding-right: 5%
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px auto auto auto auto auto auto;
+        grid-gap: 50px 1px;
+        grid-template-areas: "work work work" "side-info side-info side-info" "picture picture picture" "subtitle subtitle subtitle" "description description description" "gallery gallery gallery" "venus-video venus-video venus-video";
+    }
+
+    .work {
+        grid-area: work;
+        margin-left: 8%;
+        width: 85%;
+    }
+
+    .work h2 {
+        font-size: 25px;
+    }
+
+    .work p {
+        font-size: 17px;
+    }
+
+    .side-info {
+        grid-area: side-info;
+        margin-top: 0%;
+        margin-left: 8%;
+    }
+
+    .side-info h3 {
+        font-size: 20px;
+    }
+
+    .side-info p {
+        font-size: 17px;
+    }
+
+    .picture {
+        grid-area: picture;
+
+    }
+
+    .picture img {
+        width: 90%;
+    }
+
+
+    .subtitle {
+        display: none;
+    }
+
+    .subtitle h2 {
+        display: none;
+
+    }
+
+    .description {
+        margin-top: 0%;
+    }
+
+    .description h2 {
+        font-size: 25px;
+        margin-top: 3%;
+        margin-bottom:2%;
+
+    }
+
+    .description p {
+        font-size: 17px;
+    }
+
+
+    .gallery img {
+        width: 85%;
+
+        margin-top: .7%;
+    }
+
+
+    .venus-video {
+        grid-area: venus-video;
+        overflow: hidden;
+        padding-bottom: 80%;
+        position: relative;
+        height: 0;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 15%;
+    }
+
+
+    .venus-video iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+
+    }
+    .footer {
+        padding-bottom: 15%;
+
+    }
+
+    .footer img {
+        width: 12%;
+        padding-top: 1%;
+        margin-left: 2%;
+    }
+}
+
+
+@media screen and (max-width: 414px) and (orientation:portrait) {
+
+
+
+    .grid-container {
+        grid-template-rows: 150px auto auto auto auto auto auto;
+    }
+
+
+}
+
+@media screen and (max-width: 398px) and (orientation:portrait) {
+
+
+
+    .grid-container {
+        grid-template-rows: 190px auto auto auto auto auto auto;
+    }
+
+
+}
+
+@media screen and (max-width: 325px) and (orientation:portrait) {
+
+
+
+    .grid-container {
+        grid-template-rows: 220px auto auto auto auto auto auto;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1024px) and (orientation:landscape) {
+
+
+    .grid-container {
+        grid-template-rows: 5% 18% 5% 1fr 30%;
+    }
+
+    .description p {
+        margin-top: 4%;
+    }
+
+
+    .footer {
+        padding-bottom: 7%;
+        background-color: #FFEE3C;
+    }
+
+    .footer img {
+        width: 5%;
+        padding-top: 0%;
+        margin-left: 2%
+    }
+
+}
+
+
+
+@media screen and (max-width: 960px) and (orientation:landscape) {
+
+    .grid-container {
+        grid-template-rows: auto auto auto auto auto;
+    }
+}
+
+
+@media screen and (max-width: 823px) and (orientation:landscape) {
+
+    .logo {
+        width: 6%;
+        margin-top: 2%;
+    }
+
+    .button {
+        font-size: 15px;
+
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4% auto auto auto auto auto auto;
+        grid-gap: 50px 1px;
+        grid-template-areas: "work work work" "side-info side-info side-info" "picture picture picture" "subtitle subtitle subtitle" "description description description" "gallery gallery gallery" "venus-video venus-video venus-video";
+    }
+
+    .work {
+        grid-area: work;
+        margin-left: 8%;
+        width: 85%;
+    }
+
+    .work p {
+
+        font-size: 17px;
+    }
+
+    .side-info {
+        grid-area: side-info;
+        margin-top: 0%;
+        margin-left: 8%;
+    }
+
+    .side-info h3 {
+        font-size: 20px;
+    }
+
+    .side-info p {
+        font-size: 17px;
+    }
+
+    .picture {
+        grid-area: picture;
+
+    }
+
+    .picture img {
+        width: 50%;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+
+    .description {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .description h2 {
+        display: block;
+        font-weight: 300;
+        font-size: 23px;
+        margin-left: 10%;
+
+    }
+
+    .description p {
+
+        font-size: 17px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery img {
+        width: 60%;
+    }
+
+
+    .venus-video {
+        padding-bottom: 50%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 0%;
+    }
+
+    .footer {
+        padding-bottom: 7%;
+        background-color: #FFEE3C;
+        margin-top: 12%;
+
+    }
+
+    .footer img {
+        width: 5%;
+        padding-top: 0%;
+        margin-left: 2%
+    }
+
+
+}
+
+@media screen and (max-width: 611px) and (orientation:landscape) {
+
+    .grid-container {
+        grid-template-rows: 6% auto auto auto auto auto auto;
+    }
+
+    .description h2 {
+        font-size: 23px;
+    }
+
+    .description p {
+        font-size: 17px;
+    }
+
+    .gallery img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .2%;
+    }
+
+
+}
