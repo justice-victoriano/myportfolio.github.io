@@ -822,7 +822,7 @@ border: 1px solid red; *
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 4% auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-gap: 50px 1px;
         grid-template-areas: "work work work" "side-info side-info side-info" "picture picture picture" "subtitle subtitle subtitle" "description description description" "gallery gallery gallery" "venus-video venus-video venus-video";
     }
