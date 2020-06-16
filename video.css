@@ -20,7 +20,8 @@ nav {
     position: fixed;
     width: 100%;
     margin-top: 0%;
-
+    z-index:100;
+    
 
 }
 
@@ -157,7 +158,6 @@ nav ul li a {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: -1;
 
 }
 
@@ -194,8 +194,6 @@ nav ul li a {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: -1;
-
 }
 
 .verasoni {
@@ -229,7 +227,6 @@ nav ul li a {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: -1;
 
 }
 
@@ -253,6 +250,7 @@ h2 {
     padding-bottom: 0%;
     margin-left: 1%;
 }
+
 
 /* For presentation only, no need to copy the code below  
 .grid-container * { 
@@ -390,7 +388,6 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
 
     }
 
@@ -427,7 +424,6 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
 
     }
 
@@ -463,7 +459,6 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
     }
 
     .footer {
@@ -696,7 +691,6 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
 
     }
 
@@ -733,7 +727,7 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
+        
 
     }
 
@@ -769,7 +763,6 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        z-index: -1;
     }
 
     .footer {
