@@ -66,7 +66,7 @@ nav ul li a {
     padding-top: 7%;
     padding-right: 7%;
     cursor: pointer;
-    color: #7bc6d1;
+    color: #a3dee8;
     display: none;
 }
 
@@ -114,7 +114,7 @@ nav ul li a {
 
 .title h1 {
     font-size: 60px;
-    color: #a3dee8;
+    color: hotpink;
     text-align: center;
     background-color: #ffee3c;
     padding: 2% 0% 2% 0%;
@@ -340,7 +340,7 @@ h2 {
     }
 
     nav ul li a {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .content .grid-container {
@@ -522,6 +522,12 @@ h2 {
     */
 }
 
+@media screen and (max-width: 768px) and (orientation:portrait) {
+
+    nav ul li a {
+        font-size: 23px;
+    }
+}
 
 @media screen and (max-width: 540px) and (orientation:portrait) {
 
