@@ -627,11 +627,11 @@ nav ul li a {
 @media screen and (max-width: 768px) and (orientation:portrait) {
 
     nav ul li a {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .me p {
-        font-size: 25px;
+        font-size: 17px;
     }
 
     .button-2 img {

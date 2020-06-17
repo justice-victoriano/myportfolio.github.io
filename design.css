@@ -114,7 +114,7 @@ nav ul li a {
 
 .title h1 {
     font-size: 60px;
-    color: hotpink;
+    color:  #a3dee8;
     text-align: center;
     background-color: #ffee3c;
     padding: 2% 0% 2% 0%;
@@ -340,7 +340,7 @@ h2 {
     }
 
     nav ul li a {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .content .grid-container {
@@ -355,7 +355,7 @@ h2 {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 17px;
         margin: 10px 0px;
         cursor: pointer;
         border-radius: 5px;
@@ -365,14 +365,14 @@ h2 {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 5% auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-gap: 50px 1px;
         grid-template-areas: "title" "venus" "venus-work" "garamond" "garamond-work" "lucky-charms" "lucky-charms-work" "chip" "chip-work";
     }
 
 
     .title h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .venus {
@@ -382,12 +382,12 @@ h2 {
     }
 
     .venus h2 {
-        font-size: 35px;
+        font-size: 25px;
 
     }
 
     .venus p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -412,11 +412,11 @@ h2 {
     }
 
     .garamond h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
-    .garamond p {
-        font-size: 25px;
+    .garamond p { 
+        font-size: 20px;
         width: 90%;
     }
 
@@ -443,13 +443,11 @@ h2 {
     }
 
     .lucky-charms h2 {
-
-        font-size: 35px;
+         font-size: 25px;
     }
 
     .lucky-charms p {
-
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -475,11 +473,11 @@ h2 {
     }
 
     .chip h2 {
-        font-size: 35px;
+         font-size: 25px;
     }
 
     .chip p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -524,9 +522,62 @@ h2 {
 
 @media screen and (max-width: 768px) and (orientation:portrait) {
 
+    
+    
     nav ul li a {
-        font-size: 23px;
+        font-size: 20px;
     }
+    
+    .button {
+        font-size: 15px;
+
+    }
+
+    
+    .venus h2 {
+        font-size: 25px;
+
+    }
+
+    .venus p {
+        font-size: 17px;
+        width: 90%;
+    }
+
+
+    .garamond h2 {
+        font-size: 25px;
+    }
+
+    .garamond p { 
+         font-size: 17px;
+        width: 90%;
+    }
+
+
+    .lucky-charms h2 {
+         font-size: 25px;
+    }
+
+    .lucky-charms p {
+         font-size: 17px;
+        width: 90%;
+    }
+
+
+    .chip h2 {
+         font-size: 25px;
+    }
+
+    .chip p {
+         font-size: 17px;
+        width: 90%;
+    }
+     .footer {
+        margin-top: 20%;
+    }
+
+
 }
 
 @media screen and (max-width: 540px) and (orientation:portrait) {
