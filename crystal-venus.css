@@ -224,6 +224,67 @@ nav ul li a {
 }
 
 
+@media screen and (min-width: 1920px) and (orientation:landscape) {
+
+}
+
+@media screen and (min-width: 2560px) and (orientation:landscape) {
+    
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 100px 1px;
+    grid-template-areas: "work work side-info" "picture picture picture" "writing writing writing" "gallery gallery gallery" "venus-video venus-video venus-video";
+}
+
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+
+    .work h2 {
+        font-size: 35px;
+    }
+
+    .work p {
+        font-size: 25px;
+    }
+
+    .side-info h3 {
+
+        font-size: 30px;
+
+    }
+
+    .side-info p {
+        font-size: 25px;
+    }
+
+    .subtitle h2 {
+        margin-top: 5%;
+        font-size: 30px;
+    }
+
+    .description p {
+        padding-top: 1%;
+        font-size: 25px;
+        padding-top: 4%;
+        padding-bottom: 5%;
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
 
 
 @media screen and (max-width: 1024px) and (orientation:portrait) {
@@ -495,14 +556,21 @@ nav ul li a {
 
 
 @media screen and (max-width: 823px) and (orientation:landscape) {
-    
+    .logo {
+        width: 6%;
+        margin-top: 2%;
+    }
+
+
     .grid-container {
         grid-gap: 50px 1px;
     }
-    
+
     .picture img {
         width: 55%;
     }
+
+}
 
 @media screen and (max-width: 640px) and (orientation:landscape) {
 
