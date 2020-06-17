@@ -514,7 +514,7 @@ nav ul li a {
 
 
     nav ul li a {
-        font-size: 10px;
+        font-size: 20px;
     }
 
 
@@ -548,7 +548,7 @@ nav ul li a {
         margin-top: 0%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 30px;
+        font-size: 20px;
         width: 70%;
     }
 
@@ -604,7 +604,7 @@ nav ul li a {
 
     .footer {
         padding-bottom: 9%;
-        background-color: hotpink;
+        background-color:  #FFEE3C;
 
     }
 
