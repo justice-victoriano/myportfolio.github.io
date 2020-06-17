@@ -203,8 +203,6 @@ nav ul li a {
     width: 100%;
     position: absolute;
 
-
-
 }
 
 .footer {
@@ -224,19 +222,17 @@ nav ul li a {
 }
 
 
-@media screen and (min-width: 1920px) and (orientation:landscape) {
-
-}
+@media screen and (min-width: 1920px) and (orientation:landscape) {}
 
 @media screen and (min-width: 2560px) and (orientation:landscape) {
-    
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-gap: 100px 1px;
-    grid-template-areas: "work work side-info" "picture picture picture" "writing writing writing" "gallery gallery gallery" "venus-video venus-video venus-video";
-}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 100px 1px;
+        grid-template-areas: "work work side-info" "picture picture picture" "writing writing writing" "gallery gallery gallery" "venus-video venus-video venus-video";
+    }
 
 
     nav ul li a {
@@ -283,10 +279,6 @@ nav ul li a {
 }
 
 
-
-
-
-
 @media screen and (max-width: 1024px) and (orientation:portrait) {
 
     .logo {
@@ -300,8 +292,9 @@ nav ul li a {
         padding-bottom: 6%;
     }
 
+
     nav ul li a {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .content .grid-container {
@@ -313,32 +306,32 @@ nav ul li a {
     }
 
     .work h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .work p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .side-info h3 {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .side-info p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .picture img {
-        width: 80%;
+        width: 60%;
     }
 
     .subtitle h2 {
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 8%;
     }
 
     .description p {
-        font-size: 25px;
+        font-size: 20px;
         width: 60%;
     }
 
@@ -349,15 +342,13 @@ nav ul li a {
     }
 
     .gallery img {
-        width: 80%;
+        width: 70%;
         margin-top: .3%;
     }
 
     .venus-video {
-        margin-right: 10%;
-        margin-left: 10%;
-
-
+        margin-right: 15%;
+        margin-left: 15%;
     }
 
     .footer {
@@ -381,12 +372,13 @@ nav ul li a {
 
 
     nav ul li a {
-        font-size: 23px;
+        font-size: 20px;
     }
 
 
     .grid-container {
         grid-template-areas: "work work work" "picture picture picture" "writing writing writing" "gallery gallery gallery" "venus-video venus-video venus-video";
+        grid-gap: 50px 1px;
     }
     .work {
         grid-area: work;
@@ -395,10 +387,12 @@ nav ul li a {
 
     }
     .work h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .work p {
+
+        font-size: 17px;
         font-weight: 300;
     }
 
@@ -409,14 +403,14 @@ nav ul li a {
         display: block;
     }
     .work-2 h3 {
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 600;
         margin-bottom: 0%;
         margin-top: 7%;
     }
 
     .work-2 p {
-        font-size: 25px;
+        font-size: 17px;
         padding: 0%;
         margin: 0%;
     }
@@ -425,13 +419,13 @@ nav ul li a {
     .subtitle h2 {
         font-weight: 300;
         color: black;
-        font-size: 30px;
+        font-size: 22px;
         width: 50%;
         margin-left: 10%;
     }
 
     .description p {
-        font-size: 25px;
+        font-size: 17px;
         padding-top: 10%;
         margin-left: 10%;
         width: 80%;
@@ -514,6 +508,11 @@ nav ul li a {
     .work-2 p {
         font-size: 17px;
     }
+    
+    
+    .picture img {
+        width: 80%;
+    }
 
 
     .subtitle h2 {
@@ -522,6 +521,16 @@ nav ul li a {
 
     .description p {
         font-size: 17px;
+    }
+    
+    
+    .gallery img {
+        width: 80%;
+    }
+    
+    .venus-video {
+        margin-right: 10%;
+        margin-left: 10%;
     }
 
     .footer {
@@ -568,6 +577,11 @@ nav ul li a {
 
     .picture img {
         width: 55%;
+    }
+    
+    .subtitle h2 {
+        margin-top:6%;
+        
     }
 
 }
@@ -624,6 +638,7 @@ nav ul li a {
         font-size: 22px;
         width: 50%;
         margin-left: 10%;
+        
     }
 
     .description p {
