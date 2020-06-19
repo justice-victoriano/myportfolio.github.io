@@ -428,6 +428,19 @@ nav ul li a {
         font-size: 20px;
         width: 60%;
     }
+    
+    .caption-1 p{
+        font-size: 20px;
+    }
+    
+    .caption-2 p{
+        font-size: 20px;
+    }
+    
+    
+    .caption-3 p{
+        font-size: 20px;
+    }
 .footer {
 background-color: #FFEE3C;
 padding: 2%;

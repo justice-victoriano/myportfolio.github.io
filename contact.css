@@ -189,20 +189,32 @@ nav ul li a {
 
 
 .footer {
-    padding-top: 3%;
-    padding-bottom: 5.7%;
-    padding-right: 3%;
     background-color: #FFEE3C;
-    margin-top: 30%;
-
+    padding: 6% 2% 2% 2%;
+    margin-top:20%;
 }
 
-.footer img {
-    float: right;
-    width: 3%;
-    padding-bottom: 0%;
-    margin-left: 1%;
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1px 1px;
+    grid-template-areas:"hand-coded";
 }
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 15px;
+}
+
+
 
 
 /*
@@ -237,6 +249,10 @@ nav ul li a {
     .grid-container figcaption {
         font-size: 25px;
     }
+    
+.hand-coded p {
+    font-size: 20px;
+}
 
 }
 
@@ -267,6 +283,13 @@ nav ul li a {
         font-size: 17px;
 
     }
+    .footer {
+        margin-top:25%;
+    }
+    
+    .hand-coded p {
+        font-size: 15px;
+}
 }
 
 @media screen and (max-width: 1130px) and (orientation:landscape) {
@@ -409,22 +432,13 @@ nav ul li a {
         font-size: 20px;
 
     }
-    .footer {
-        margin-top: 25%;
-        padding-bottom: 9.5%;
-        padding-top: 2%;
-        padding-right: 2%;
-        background-color: #FFEE3C;
-        margin-top: 30%;
-
+    .footer{
+        margin-top:27%;
+        padding: 9.5% 2% 2% 2%;
     }
-
-    .footer img {
-        width: 8%;
-        padding-top: 0%;
-        margin-left: 2%;
-        float: right;
-    }
+.hand-coded p {
+    font-size: 20px;
+}
 }
 
 
@@ -459,8 +473,14 @@ nav ul li a {
 
     .subtitle h2 {
         font-size: 25px;
-
     }
+    .footer{
+        padding: 9.5% 2% 2% 2%;
+    }
+    
+.hand-coded p {
+    font-size: 17px;
+}
 
 
 }
@@ -529,17 +549,13 @@ nav ul li a {
         font-size: 17px;
     }
     
-    .footer {
-        padding-bottom: 15%;
-        margin-top:20%;
-
+    .footer{
+        margin-top:27%;
+        padding: 9.5% 2% 2% 2%;
     }
-
-    .footer img {
-        width: 12%;
-        padding-top: 1%;
-        margin-left: 2%;
-    }
+.hand-coded p {
+    font-size: 17px;
+}
 }
 
 
@@ -551,6 +567,10 @@ nav ul li a {
         margin-right:auto;
         width:60%;
     }
+    
+.hand-coded p {
+    font-size: 17px;
+}
 }
 
 @media screen and (max-width: 471px) and (orientation:portrait) {
@@ -558,6 +578,15 @@ nav ul li a {
     .subtitle h2 {
         width:79%;
     }
+    
+    .footer{
+        padding: 12% 2% 14% 2%;
+    }
+.hand-coded p {
+    font-size: 15px;
+    width:75%;
+    float:right;
+}
 }
 
 @media screen and (max-width: 358px) and (orientation:portrait) {
@@ -565,23 +594,42 @@ nav ul li a {
     .subtitle h2 {
         width:90%;
     }
+    
+    .footer{
+        padding: 10% 2% 17% 2%;
+    }
 }
 
 
 @media screen and (max-width: 1024px) and (orientation:landscape) {
 
 
-    .footer {
-        padding-bottom: 7%;
-        background-color: #FFEE3C;
+.footer {
+    background-color: #FFEE3C;
+    padding: 8% 2% 2% 2%;
+    margin-top:20%;
+}
 
-    }
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1px 1px;
+    grid-template-areas:"hand-coded";
+}
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
-    }
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 17px;
+}
+
 
 }
 
@@ -596,18 +644,31 @@ nav ul li a {
     .title h1 {
         font-size: 50px;
     }
-    
-    .footer {
-        padding-bottom: 7%;
-        background-color: #FFEE3C;
-        margin-top: 12%;
+.footer {
+    background-color: #FFEE3C;
+    padding: 8% 2% 2% 2%;
+    margin-top:20%;
+}
 
-    }
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1px 1px;
+    grid-template-areas:"hand-coded";
+}
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
-    }
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 17px;
+}
+
 }
 
