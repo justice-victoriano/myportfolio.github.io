@@ -114,7 +114,7 @@ nav ul li a {
 
 .title h1 {
     font-size: 60px;
-    color:  #a3dee8;
+    color: #a3dee8;
     text-align: center;
     background-color: #ffee3c;
     padding: 2% 0% 2% 0%;
@@ -223,47 +223,53 @@ nav ul li a {
     width: 100%;
 }
 
-h2 {
-    color: #3E424B;
-}
 
 
 .footer {
-    padding-top: 3%;
-    padding-bottom: 5.7%;
-    padding-right: 3%;
     background-color: #FFEE3C;
-
+    padding: 2%;
 }
 
-.footer img {
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1px 1px;
+    grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons {
+    grid-area: footer-icons;
+}
+
+.footer-icons img {
+    width: 5%;
+    display: inline-block;
     float: right;
-    width: 3%;
-    padding-bottom: 0%;
-    margin-left: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 15px;
 }
 
 
-
-/* For presentation only, no need to copy the code below 
-.grid-container * { 
- border: 1px solid red; 
-}
-
-
-
-/* For presentation only, no need to copy the code below 
-.grid-container * { 
- border: 1px solid red;
-}
-*/
 
 @media screen and (min-width: 1920px) and (orientation:landscape) {
 
-.content .grid-container {
-    padding-top: 8.5%;
+    .content .grid-container {
+        padding-top: 8.5%;
 
-}
+    }
 }
 
 @media screen and (min-width: 2560px) and (orientation:landscape) {
@@ -271,7 +277,7 @@ h2 {
     nav ul li a {
         font-size: 25px;
     }
-    
+
 
 
     .button {
@@ -320,7 +326,44 @@ h2 {
     .chip p {
         font-size: 25px;
     }
-*/
+    
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1px 1px;
+    grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons {
+    grid-area: footer-icons;
+}
+
+.footer-icons img {
+    width: 5%;
+    display: inline-block;
+    float: right;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    padding-top:0%;
+    font-size: 25px;
+}
 }
 
 
@@ -415,7 +458,7 @@ h2 {
         font-size: 25px;
     }
 
-    .garamond p { 
+    .garamond p {
         font-size: 20px;
         width: 90%;
     }
@@ -443,7 +486,7 @@ h2 {
     }
 
     .lucky-charms h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
 
     .lucky-charms p {
@@ -473,7 +516,7 @@ h2 {
     }
 
     .chip h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
 
     .chip p {
@@ -495,45 +538,59 @@ h2 {
         margin-right: auto;
     }
 
-
     .footer {
-        margin-top: 30%;
-        padding-bottom: 9.5%;
-        padding-top: 2%;
-        padding-right: 2%;
         background-color: #FFEE3C;
+        padding: 2%;
+        margin-top:20%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
         width: 8%;
-        padding-top: 0%;
-        margin-left: 2%;
+        display: inline-block;
         float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
     }
 
+    .hand-coded {
+        grid-area: hand-coded;
+    }
 
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
 
-    /* For presentation only, no need to copy the code below 
-.grid-container * { 
- border: 1px solid red;
-}
-    */
 }
 
 @media screen and (max-width: 768px) and (orientation:portrait) {
 
-    
-    
+
+
     nav ul li a {
         font-size: 20px;
     }
-    
+
     .button {
         font-size: 15px;
 
     }
 
-    
+
     .venus h2 {
         font-size: 25px;
 
@@ -549,33 +606,68 @@ h2 {
         font-size: 25px;
     }
 
-    .garamond p { 
-         font-size: 17px;
+    .garamond p {
+        font-size: 17px;
         width: 90%;
     }
 
 
     .lucky-charms h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
 
     .lucky-charms p {
-         font-size: 17px;
+        font-size: 17px;
         width: 90%;
     }
 
 
     .chip h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
 
     .chip p {
-         font-size: 17px;
+        font-size: 17px;
         width: 90%;
     }
-     .footer {
-        margin-top: 20%;
-    }
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+    margin-top:20%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width:8%;
+    display: inline-block;
+    float: right;
+    padding-left:1%;
+    padding-bottom:1%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+}
+
+.hand-coded p{
+    text-align: right;
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size: 17px;
+}
+
+
 
 
 }
@@ -585,7 +677,7 @@ h2 {
 
     .logo {
         width: 12%;
-        margin-top: -9.5%;
+        margin-top: -10%;
         padding-left: 0%;
 
     }
@@ -602,10 +694,12 @@ h2 {
 
     nav.black ul {
         background: white;
+
     }
 
     .showing {
         max-height: 40em;
+        padding-bottom: 5%;
 
     }
 
@@ -641,8 +735,8 @@ h2 {
         grid-gap: 50px 1px;
         grid-template-areas: "title" "venus" "venus-work" "garamond" "garamond-work" "lucky-charms" "lucky-charms-work" "chip" "chip-work";
     }
-    
-    
+
+
     .content .grid-container {
         padding-top: 15%;
     }
@@ -687,17 +781,85 @@ h2 {
     }
 
 
-    .footer {
-        padding-bottom: 15%;
+.footer {
+    background-color: #FFEE3C;
+    padding: 4% 2%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
 
-    }
+.footer-icons { 
+    grid-area: footer-icons; 
+}
 
-    .footer img {
-        width: 12%;
-        padding-top: 1%;
-        margin-left: 2%;
-    }
+.footer-icons img{
+    width:14%;
+    display: inline-block;
+    float: right;
+    padding-left:2%;
+    padding-bottom:1%;
+}
 
+.hand-coded { 
+    grid-area: hand-coded; 
+
+}
+
+.hand-coded p{
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size:17px;
+    width:60%;
+    float:right;
+}
+
+}
+
+@media screen and (max-width:420px) and (orientation:portrait){
+    
+.footer {
+    background-color: #FFEE3C;
+    padding: 5% 3%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width:14%;
+    display: inline-block;
+    float: right;
+    padding-left:2%;
+    padding-bottom:2%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+
+}
+
+.hand-coded p{
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size:15px;
+    width:80%;
+    float:right;
+}
 }
 
 @media screen and (max-width: 414px) and (orientation:portrait) {
@@ -710,18 +872,43 @@ h2 {
 
 @media screen and (max-width: 1024px) and (orientation:landscape) {
 
-
     .footer {
-        padding-bottom: 7%;
         background-color: #FFEE3C;
-
+        padding: 2%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
+    .footer-icons {
+        grid-area: footer-icons;
     }
+
+    .footer-icons img {
+        width: 6%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
+
+
 
 }
 
@@ -870,19 +1057,51 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-    .footer {
-        padding-bottom: 7%;
-        background-color: #FFEE3C;
-        margin-top: 12%;
-
+    
+    .footer{
+        margin-top:20%;
     }
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
-    }
+}
+
+
+@media screen and (max-width: 670px) and (orientation:landscape) {
+    
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width:8%;
+    display: inline-block;
+    float: right;
+    padding-left:1%;
+    padding-bottom:1%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+}
+
+.hand-coded p{
+    text-align: right;
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size: 17px;
+}
+
 
 }

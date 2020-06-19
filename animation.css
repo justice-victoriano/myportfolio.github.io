@@ -19,10 +19,10 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    margin-top:0%;
-    
-    z-index:100;
-    
+    margin-top: 0%;
+
+    z-index: 100;
+
 
 }
 
@@ -73,29 +73,29 @@ nav ul li a {
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.content .grid-container{
-    padding-top:9%;
-    
+.content .grid-container {
+    padding-top: 9%;
+
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 36.5% 1fr 1fr;
-  grid-template-rows: 9% 1fr 1fr 80px;
-  grid-gap: 160px 50px;
-  grid-template-areas: "title title title" "animation2d animation2d-work animation2d-work" "animation3d animation3d-work animation3d-work";
+    display: grid;
+    grid-template-columns: 36.5% 1fr 1fr;
+    grid-template-rows: 9% 1fr 1fr 80px;
+    grid-gap: 160px 50px;
+    grid-template-areas: "title title title" "animation2d animation2d-work animation2d-work" "animation3d animation3d-work animation3d-work";
 }
 
-.grid-container .title { 
+.grid-container .title {
     grid-area: title;
     padding-bottom: 0%;
-    margin-bottom:0%;
+    margin-bottom: 0%;
 }
 
-.button  {
+.button {
     background-color: #ffee3c;
     color: #3E424B;
     padding: 15px 32px;
@@ -124,24 +124,26 @@ nav ul li a {
 }
 
 
-.animation2d { 
+.animation2d {
     grid-area: animation2d;
     margin-left: 34%;
-    
-    
+
+
 }
-.animation2d h2{
+
+.animation2d h2 {
     font-weight: 600;
     font-size: 25px;
-    margin-top:0%;
-    
+    margin-top: 0%;
+
 }
-.animation2d p{
+
+.animation2d p {
     font-weight: 300;
 }
 
-.animation2d-work { 
-    grid-area: animation2d-work; 
+.animation2d-work {
+    grid-area: animation2d-work;
     overflow: hidden;
     padding-bottom: 46%;
     position: relative;
@@ -159,32 +161,31 @@ nav ul li a {
 }
 
 
-.animation3d { 
-    grid-area: animation3d; 
+.animation3d {
+    grid-area: animation3d;
     margin-left: 34%;
 }
 
-.animation3d h2{
+.animation3d h2 {
     font-weight: 600;
     font-size: 25px;
-    margin-top:0%;
+    margin-top: 0%;
 }
-.animation3d p{
+
+.animation3d p {
     font-weight: 300;
 }
 
 
-.animation3d-work { 
-    grid-area: animation3d-work; 
-     overflow: hidden;
+.animation3d-work {
+    grid-area: animation3d-work;
+    overflow: hidden;
     padding-bottom: 46%;
     position: relative;
     height: 0;
     margin-right: 20%;
 
 }
-
-
 
 .animation3d-work iframe {
     left: 0;
@@ -194,36 +195,51 @@ nav ul li a {
     position: absolute;
 }
 
-
-h2{
-    color: #3E424B;
-}
-
-
-
 .footer {
-    padding-top: 3%;
-    padding-bottom: 5.7%;
-    padding-right:3%;
     background-color: #FFEE3C;
-   
+    padding: 2%;
 }
 
-.footer img{
-    float:right;
-    width: 3%;
-    padding-bottom:0%;
-    margin-left:1%;
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1px 1px;
+    grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons {
+    grid-area: footer-icons;
+}
+
+.footer-icons img {
+    width: 5%;
+    display: inline-block;
+    float: right;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 15px;
 }
 
 
 
 @media screen and (min-width: 1920px) and (orientation:landscape) {
 
-.content .grid-container {
-    padding-top: 8.5%;
+    .content .grid-container {
+        padding-top: 8.5%;
 
-}
+    }
 }
 
 @media screen and (min-width: 2560px) and (orientation:landscape) {
@@ -231,7 +247,7 @@ h2{
     nav ul li a {
         font-size: 25px;
     }
-    
+
 
 
     .button {
@@ -242,8 +258,8 @@ h2{
     .title h1 {
         font-size: 80px;
     }
-    
-    
+
+
     .animation2d h2 {
         font-size: 35px;
 
@@ -262,8 +278,47 @@ h2{
         width: 90%;
     }
 
-}
 
+    .footer {
+        background-color: #FFEE3C;
+        padding: 2%;
+    }
+
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
+    }
+
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 5%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        padding-top: 0%;
+        font-size: 25px;
+    }
+
+
+}
 
 
 @media screen and (max-width: 1024px) and (orientation:portrait) {
@@ -280,7 +335,7 @@ h2{
     }
 
     nav ul li a {
-        font-size: 30px;
+        font-size: 20px;
     }
     .content .grid-container {
         padding-top: 15%;
@@ -288,22 +343,20 @@ h2{
 
 
     .button {
-
-        font-size: 20px;
-
+        font-size: 17px;
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 12.9% auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-gap: 50px 1px;
         grid-template-areas: "title" "animation2d" "animation2d-work" "animation3d" "animation3d-work";
     }
 
 
     .title h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .animation2d {
@@ -312,11 +365,12 @@ h2{
 
     }
     .animation2d h2 {
-        font-size: 35px;
+        font-size: 25px;
 
     }
     .animation2d p {
-        font-size: 25px;
+
+        font-size: 20px;
         width: 90%;
     }
 
@@ -342,16 +396,16 @@ h2{
     }
 
 
-    .animation3d{
+    .animation3d {
         grid-area: animation3d;
         margin-left: 8%;
     }
 
     .animation3d h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .animation3d p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -363,10 +417,10 @@ h2{
         padding-bottom: 47%;
         position: relative;
         height: 0;
-        
+
         margin-right: 8.5%;
         margin-left: 8.5%;
-        
+
 
 
     }
@@ -380,43 +434,123 @@ h2{
 
     }
 
+
     .footer {
-        margin-top: 25%;
-        padding-bottom: 9.5%;
-        padding-top: 2%;
-        padding-right: 2%;
         background-color: #FFEE3C;
-        
+        padding: 2%;
+        margin-top: 15%
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
         width: 8%;
-        padding-top: 0%;
-        margin-left: 2%;
+        display: inline-block;
         float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
     }
 
+    .hand-coded {
+        grid-area: hand-coded;
+    }
 
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
 
-    /* For presentation only, no need to copy the code below 
-.grid-container * { 
- border: 1px solid red;
-}
-    */
 }
 
 
 @media screen and (max-width: 768px) and (orientation:portrait) {
 
     nav ul li a {
-        font-size: 23px;
+        font-size: 20px;
     }
+
+    .button {
+        font-size: 15px;
+
+    }
+
+    .animation2d h2 {
+        font-size: 25px;
+
+    }
+    .animation2d p {
+
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .animation3d h2 {
+        font-size: 25px;
+
+    }
+    .animation3d p {
+
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .footer {
+        background-color: #FFEE3C;
+        padding: 2%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
+    }
+
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 8%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
+
+
+
 }
+
 @media screen and (max-width: 540px) and (orientation:portrait) {
 
     .logo {
         width: 12%;
-        margin-top: -9.5%;
+        margin-top: -10%;
         padding-left: 0%;
 
     }
@@ -437,6 +571,7 @@ h2{
 
     .showing {
         max-height: 40em;
+        padding-bottom: 5%;
 
     }
 
@@ -464,12 +599,12 @@ h2{
         font-size: 14px;
 
     }
-    
-    
+
+
     .grid-container {
         grid-template-rows: 6.5% auto auto auto auto auto auto;
     }
-    
+
     .title h1 {
         font-size: 50px;
     }
@@ -480,11 +615,11 @@ h2{
 
     }
     .animation2d h2 {
-         font-size: 25px;
+        font-size: 25px;
 
     }
     .animation2d p {
-         font-size: 17px;
+        font-size: 17px;
         width: 90%;
     }
 
@@ -495,7 +630,7 @@ h2{
     }
 
     .animation3d h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
     .animation3d p {
         font-size: 17px;
@@ -504,15 +639,84 @@ h2{
 
 
     .footer {
-        padding-bottom: 15%;
-        margin-top:0%;
+        background-color: #FFEE3C;
+        padding: 4% 2%;
+        margin-top: 0%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
+    }
+
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 14%;
+        display: inline-block;
+        float: right;
+        padding-left: 2%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
 
     }
 
-    .footer img {
-        width: 12%;
-        padding-top: 1%;
-        margin-left: 2%;
+    .hand-coded p {
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+        width: 60%;
+        float: right;
+    }
+}
+
+
+@media screen and (max-width:420px) and (orientation:portrait) {
+
+    .footer {
+        background-color: #FFEE3C;
+        padding: 5% 3%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
+    }
+
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 14%;
+        display: inline-block;
+        float: right;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+
+    }
+
+    .hand-coded p {
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 15px;
+        width: 80%;
+        float: right;
     }
 }
 
@@ -528,15 +732,40 @@ h2{
 
 
     .footer {
-        padding-bottom: 7%;
         background-color: #FFEE3C;
-
+        padding: 2%;
+        margin-top: 0%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 6%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
     }
 
 }
@@ -552,7 +781,7 @@ h2{
         font-size: 15px;
 
     }
-    
+
 
     .grid-container {
         display: grid;
@@ -587,7 +816,7 @@ h2{
         padding-bottom: 47%;
         position: relative;
         height: 0;
-        
+
         margin-right: 8.5%;
         margin-left: 8.5%;
 
@@ -637,22 +866,55 @@ h2{
         height: 100%;
         width: 100%;
         position: absolute;
-        
-    }
 
-
-    .footer {
-        padding-bottom: 7%;
-        background-color: #FFEE3C;
-        margin-top: 12%;
-
-    }
-
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
     }
     
+    .footer{
+        margin-top:15%;
+    }
 
-ß}
+
+}
+
+
+@media screen and (max-width: 670px) and (orientation:landscape) {
+
+    .footer {
+        background-color: #FFEE3C;
+        padding: 2%;
+        margin-top:15%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
+    }
+
+    .footer-icons {
+        grid-area: footer-icons;
+    }
+
+    .footer-icons img {
+        width: 8%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
+
+
+}

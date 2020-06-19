@@ -20,8 +20,8 @@ nav {
     position: fixed;
     width: 100%;
     margin-top: 0%;
-    z-index:100;
-    
+    z-index: 100;
+
 
 }
 
@@ -164,7 +164,7 @@ nav ul li a {
 
 .frontliners {
     grid-area: frontliners;
-    margin-left: 40%;
+    margin-left: 34%;
 }
 
 .frontliners h2 {
@@ -198,7 +198,7 @@ nav ul li a {
 
 .verasoni {
     grid-area: verasoni;
-    margin-left: 40%;
+    margin-left: 34%;
 }
 
 .verasoni h2 {
@@ -230,41 +230,53 @@ nav ul li a {
 
 }
 
-h2 {
-    color: #3E424B;
-}
-
-
 
 .footer {
-    padding-top: 3%;
-    padding-bottom: 5.7%;
-    padding-right: 3%;
     background-color: #FFEE3C;
-
+    padding: 2%;
 }
 
-.footer img {
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1px 1px;
+    grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons {
+    grid-area: footer-icons;
+}
+
+.footer-icons img {
+    width: 5%;
+    display: inline-block;
     float: right;
-    width: 3%;
-    padding-bottom: 0%;
-    margin-left: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    font-size: 15px;
 }
 
 
-/* For presentation only, no need to copy the code below  
-.grid-container * { 
- border: 1px solid red;
-}
-   
-*/
+
 
 @media screen and (min-width: 1920px) and (orientation:landscape) {
 
-.content .grid-container {
-    padding-top: 8.5%;
+    .content .grid-container {
+        padding-top: 8.5%;
 
-}
+    }
 }
 
 @media screen and (min-width: 2560px) and (orientation:landscape) {
@@ -272,7 +284,7 @@ h2 {
     nav ul li a {
         font-size: 25px;
     }
-    
+
 
 
     .button {
@@ -283,8 +295,8 @@ h2 {
     .title h1 {
         font-size: 80px;
     }
-    
-    
+
+
     .recruitment h2 {
         font-size: 35px;
 
@@ -311,6 +323,45 @@ h2 {
         font-size: 25px;
         width: 90%;
     }
+    
+
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1px 1px;
+    grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons {
+    grid-area: footer-icons;
+}
+
+.footer-icons img {
+    width: 5%;
+    display: inline-block;
+    float: right;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.hand-coded {
+    grid-area: hand-coded;
+}
+
+.hand-coded p {
+    text-align: right;
+    font-weight: 600;
+    color: #a3dee8;
+    margin: 0%;
+    padding-top:0%;
+    font-size: 25px;
+}
 
 }
 
@@ -330,7 +381,7 @@ h2 {
     }
 
     nav ul li a {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .content .grid-container {
@@ -339,22 +390,21 @@ h2 {
 
 
     .button {
-
-        font-size: 20px;
+        font-size: 17px;
 
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8% auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-gap: 50px 1px;
         grid-template-areas: "title" "recruitment" "recruitment-work" "frontliners" "frontliners-work" "verasoni" "verasoni-work";
     }
 
 
     .title h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .recruitment {
@@ -363,11 +413,11 @@ h2 {
 
     }
     .recruitment h2 {
-        font-size: 35px;
+        font-size: 25px;
 
     }
     .recruitment p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -398,10 +448,10 @@ h2 {
     }
 
     .frontliners h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .frontliners p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -433,14 +483,14 @@ h2 {
     }
 
     .verasoni h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .verasoni p {
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
     }
-    
-    
+
+
     .verasoni-work {
         grid-area: verasoni-work;
         overflow: hidden;
@@ -461,20 +511,42 @@ h2 {
         position: absolute;
     }
 
-    .footer {
-        margin-top: 10%;
-        padding-bottom: 9.5%;
-        padding-top: 2%;
-        padding-right: 2%;
-        background-color: #FFEE3C;
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+    }
+.grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
-        width: 8%;
-        padding-top: 0%;
-        margin-left: 2%;
-        float: right;
+    .footer-icons {
+        grid-area: footer-icons;
     }
+
+    .footer-icons img {
+        width: 8%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
+
 
 
 
@@ -489,16 +561,89 @@ h2 {
 @media screen and (max-width: 768px) and (orientation:portrait) {
 
     nav ul li a {
-        font-size: 23px;
+        font-size: 20px;
     }
+    
+    
+    .button {
+        font-size: 15px;
+
+    }
+    
+    .recruitment h2 {
+        font-size: 25px;
+
+    }
+    .recruitment p {
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .frontliners h2 {
+        font-size: 25px;
+
+    }
+    .frontliners p {
+        font-size: 17px;
+        width: 90%;
+    }
+    
+    .verasoni h2 {
+        font-size: 25px;
+
+    }
+    .verasoni p {
+        font-size: 17px;
+        width: 90%;
+    }
+    
+
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
 }
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width:8%;
+    display: inline-block;
+    float: right;
+    padding-left:1%;
+    padding-bottom:1%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+}
+
+.hand-coded p{
+    text-align: right;
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size: 17px;
+}
+
+
+}
+
 @media screen and (max-width: 540px) and (orientation:portrait) {
 
 
 
     .logo {
         width: 12%;
-        margin-top: -9.5%;
+        margin-top: -10%;
         padding-left: 0%;
 
     }
@@ -510,7 +655,7 @@ h2 {
         padding-right: 0%;
         padding-left: 0%;
         padding-top: 5%;
-        padding-bottom: 0%;
+        padding-bottom:0%;
     }
 
     nav.black ul {
@@ -519,6 +664,7 @@ h2 {
 
     .showing {
         max-height: 40em;
+        padding-bottom: 5%;
 
     }
 
@@ -546,12 +692,12 @@ h2 {
         font-size: 14px;
 
     }
-    
-    
+
+
     .grid-container {
         grid-template-rows: 4.5% auto auto auto auto auto auto;
     }
-    
+
     .title h1 {
         font-size: 50px;
     }
@@ -562,11 +708,11 @@ h2 {
 
     }
     .recruitment h2 {
-         font-size: 25px;
+        font-size: 25px;
 
     }
     .recruitment p {
-         font-size: 17px;
+        font-size: 17px;
         width: 90%;
     }
 
@@ -577,7 +723,7 @@ h2 {
     }
 
     .frontliners h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
     .frontliners p {
         font-size: 17px;
@@ -590,23 +736,92 @@ h2 {
     }
 
     .verasoni h2 {
-         font-size: 25px;
+        font-size: 25px;
     }
     .verasoni p {
         font-size: 17px;
         width: 90%;
     }
+
+.footer {
+    background-color: #FFEE3C;
+    padding: 4% 2%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width:14%;
+    display: inline-block;
+    float: right;
+    padding-left:2%;
+    padding-bottom:1%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+
+}
+
+.hand-coded p{
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size:17px;
+    width:60%;
+    float:right;
+}
+}
+
+
+@media screen and (max-width:420px) and (orientation:portrait){
     
-    .footer {
-        padding-bottom: 15%;
+.footer {
+    background-color: #FFEE3C;
+    padding: 5% 3%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
 
-    }
+.footer-icons { 
+    grid-area: footer-icons; 
+}
 
-    .footer img {
-        width: 12%;
-        padding-top: 1%;
-        margin-left: 2%;
-    }
+.footer-icons img{
+    width:14%;
+    display: inline-block;
+    float: right;
+    padding-left:2%;
+    padding-bottom:2%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+
+}
+
+.hand-coded p{
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size:15px;
+    width:80%;
+    float:right;
+}
 }
 
 @media screen and (max-width: 414px) and (orientation:portrait) {
@@ -619,18 +834,43 @@ h2 {
 
 @media screen and (max-width: 1024px) and (orientation:landscape) {
 
-
     .footer {
-        padding-bottom: 7%;
         background-color: #FFEE3C;
-
+        padding: 2%;
+    }
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1px 1px;
+        grid-template-areas: "footer-icons" "hand-coded";
     }
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
+    .footer-icons {
+        grid-area: footer-icons;
     }
+
+    .footer-icons img {
+        width: 6%;
+        display: inline-block;
+        float: right;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .hand-coded {
+        grid-area: hand-coded;
+    }
+
+    .hand-coded p {
+        text-align: right;
+        font-weight: 600;
+        color: #a3dee8;
+        margin: 0%;
+        font-size: 17px;
+    }
+
+
 
 }
 
@@ -645,7 +885,7 @@ h2 {
         font-size: 15px;
 
     }
-    
+
 
     .grid-container {
         display: grid;
@@ -727,7 +967,7 @@ h2 {
         height: 100%;
         width: 100%;
         position: absolute;
-        
+
 
     }
 
@@ -740,11 +980,11 @@ h2 {
         font-size: 25px;
     }
     .verasoni p {
-      font-size: 17px;
+        font-size: 17px;
         width: 90%;
     }
-    
-    
+
+
     .verasoni-work {
         grid-area: verasoni-work;
         overflow: hidden;
@@ -765,18 +1005,48 @@ h2 {
         position: absolute;
     }
 
-    .footer {
-        padding-bottom: 7%;
-        background-color: #FFEE3C;
-        margin-top: 12%;
 
-    }
 
-    .footer img {
-        width: 5%;
-        padding-top: 0%;
-        margin-left: 2%
-    }
+}
+
+
+@media screen and (max-width: 670px) and (orientation:landscape) {
     
+.footer {
+    background-color: #FFEE3C;
+    padding: 2%;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: "footer-icons" "hand-coded";
+}
+
+.footer-icons { 
+    grid-area: footer-icons; 
+}
+
+.footer-icons img{
+    width: 8%;
+    display: inline-block;
+    float: right;
+    padding-left:1%;
+    padding-bottom:1%;
+}
+
+.hand-coded { 
+    grid-area: hand-coded; 
+}
+
+.hand-coded p{
+    text-align: right;
+    font-weight: 600;
+    color:#a3dee8;
+    margin:0%;
+    font-size: 17px;
+}
+
 
 }
