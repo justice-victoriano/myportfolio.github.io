@@ -84,10 +84,24 @@ nav ul li a {
 .grid-container {
     display: grid;
     grid-template-columns: 36.5% 1fr 1fr;
+    grid-template-rows: 6.5% 1fr 1fr 1fr 80px;
+    grid-gap: 160px 50px;
+    grid-template-areas: "title title title" "motiongraphics motiongraphics-work motiongraphics-work" "animation2d animation2d-work animation2d-work" "animation3d animation3d-work animation3d-work";
+}
+/*
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: 36.5% 1fr 1fr;
     grid-template-rows: 9% 1fr 1fr 80px;
     grid-gap: 160px 50px;
     grid-template-areas: "title title title" "animation2d animation2d-work animation2d-work" "animation3d animation3d-work animation3d-work";
 }
+*/
 
 .grid-container .title {
     grid-area: title;
@@ -121,6 +135,42 @@ nav ul li a {
     background-color: #ffee3c;
     padding: 2% 0% 2% 0%;
     margin: 0% 0% 0% 0%;
+}
+
+.motiongraphics {
+    grid-area: motiongraphics;
+    margin-left: 34%;
+
+
+}
+
+.motiongraphics h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0%;
+
+}
+
+.motiongraphics p {
+    font-weight: 300;
+}
+
+.motiongraphics-work {
+    grid-area: motiongraphics-work;
+    overflow: hidden;
+    padding-bottom: 46%;
+    position: relative;
+    height: 0;
+    margin-right: 20%;
+}
+
+.motiongraphics-work iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
 }
 
 
@@ -258,7 +308,15 @@ nav ul li a {
     .title h1 {
         font-size: 80px;
     }
+    
+     .motiongraphics h2 {
+        font-size: 35px;
 
+    }
+    .motiongraphics p {
+        font-size: 25px;
+        width: 90%;
+    }
 
     .animation2d h2 {
         font-size: 35px;
@@ -349,14 +407,52 @@ nav ul li a {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-gap: 50px 1px;
-        grid-template-areas: "title" "animation2d" "animation2d-work" "animation3d" "animation3d-work";
+        grid-template-areas: "title" "motiongraphics" "motiongraphics-work" "animation2d" "animation2d-work" "animation3d" "animation3d-work";
     }
 
 
     .title h1 {
         font-size: 60px;
+    }
+    
+    
+
+    .motiongraphics {
+        grid-area: motiongraphics;
+        margin-left: 8%;
+
+    }
+    .motiongraphics h2 {
+        font-size: 25px;
+
+    }
+    .motiongraphics p {
+
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .motiongraphics-work {
+        grid-area: motiongraphics-work;
+        overflow: hidden;
+        padding-bottom: 47%;
+        position: relative;
+        height: 0;
+        margin-right: 8.5%;
+        margin-left: 8.5%;
+
+
+    }
+
+    .motiongraphics-work iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
     }
 
     .animation2d {
@@ -485,6 +581,17 @@ nav ul li a {
         font-size: 15px;
 
     }
+    
+    .motiongraphics h2 {
+        font-size: 25px;
+
+    }
+    .motiongraphics p {
+
+        font-size: 17px;
+        width: 90%;
+    }
+
 
     .animation2d h2 {
         font-size: 25px;
@@ -602,11 +709,21 @@ nav ul li a {
 
 
     .grid-container {
-        grid-template-rows: 6.5% auto auto auto auto auto auto;
+        grid-template-rows: 6.5% auto auto auto auto auto auto auto;
     }
 
     .title h1 {
         font-size: 50px;
+    }
+    
+     .motiongraphics {
+        grid-area: motiongraphics;
+        margin-left: 8%;
+
+    }
+    .amotiongraphics h2 {
+        font-size: 25px;
+
     }
 
     .animation2d {
@@ -641,7 +758,7 @@ nav ul li a {
     .footer {
         background-color: #FFEE3C;
         padding: 4% 2%;
-        margin-top: 0%;
+        margin-top: 15%;
     }
     .grid-container-3 {
         display: grid;
@@ -786,14 +903,50 @@ nav ul li a {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 7.5% auto auto auto;
+        grid-template-rows: 7.5% auto auto auto auto;
         grid-gap: 50px 1px;
-        grid-template-areas: "title" "animation2d" "animation2d-work" "animation3d" "animation3d-work";
+        grid-template-areas: "title" "motiongraphics" "motiongraphics-work" "animation2d" "animation2d-work" "animation3d" "animation3d-work";
     }
 
 
     .title h1 {
         font-size: 50px;
+    }
+    
+    .motiongraphics {
+        grid-area: motiongraphics;
+        margin-left: 8%;
+
+    }
+    .motiongraphics h2 {
+        font-size: 25px;
+
+    }
+    .motiongraphics p {
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .motiongraphics-work {
+        grid-area: motiongraphics-work;
+        overflow: hidden;
+        padding-bottom: 47%;
+        position: relative;
+        height: 0;
+
+        margin-right: 8.5%;
+        margin-left: 8.5%;
+
+
+    }
+
+    .motiongraphics-work iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
     }
 
     .animation2d {
