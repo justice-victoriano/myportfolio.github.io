@@ -89,10 +89,30 @@ nav ul li a {
     color: #7bc6d1;
     display: none;
 }
+.showreel {
+    grid-area: picture;
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    height: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 10%;
+    
+    z-index: -1;
+}
+
+.showreel iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 .me img {
     width: 35%;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 20%;
     margin-left: 12%;
 }
@@ -531,6 +551,14 @@ nav ul li a {
         margin-top: 30%;
 
     }
+    
+    
+.showreel {
+    padding-bottom: 50%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
 
     .me img {
         width: 70%;
@@ -899,6 +927,14 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1024px) and (orientation:landscape) {
+    
+    
+.showreel {
+    padding-bottom: 40%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
 
     .me img {
         width: 60%;
